@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -42,6 +43,22 @@ class PostsController extends AbstractController
                 'function' => 'add_item'
             ]
         );
+    }
+
+    /**
+     * @Route("/posts/add", methods={"POST"}, name="create_post")
+     */
+    public function createPost(Request $request): Response
+    {
+        $id = $request->request->get("id");
+        $post = $request->request->get("post");
+
+        return $this->json([
+            'method' => 'POST',
+            'function' => 'createPost',
+            'id' => (int)$id,
+            'post' => $post
+        ]);
     }
 
     /**

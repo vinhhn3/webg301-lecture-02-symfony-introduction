@@ -108,3 +108,29 @@ Now, we will create another action to handle to route paramters
 Now, we can navigate to the URL `http://127.0.0.1:8000/posts/100` to see the result with params. The params here is 100
 
 ![Alt text](image-6.png)
+
+## Request object
+
+Now, we will create another action to handle the POST request with body value
+
+```php
+    /**
+     * @Route("/posts/add", methods={"POST"}, name="create_post")
+     */
+    public function createPost(Request $request): Response
+    {
+        $id = $request->request->get("id");
+        $post = $request->request->get("post");
+
+        return $this->json([
+            'method' => 'POST',
+            'function' => 'createPost',
+            'id' => (int)$id,
+            'post' => $post
+        ]);
+    }
+```
+
+To test it, we will use Postman to make POST request to `http://127.0.0.1:8000/posts/add`
+
+![Alt text](image-7.png)

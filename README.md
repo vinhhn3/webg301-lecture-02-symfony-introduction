@@ -41,6 +41,10 @@ Now, in the `PostsController.php`, we are going to create the action below
     }
 ```
 
+The image below explains how it works
+
+![Alt text](image-8.png)
+
 To see the result, nagivate to the URL `http://127.0.0.1:8000/posts/overview`
 
 ![Alt text](image-3.png)
@@ -77,6 +81,10 @@ Now, we are going to create the action to handle HTTP GET and POST Request
     }
 ```
 
+The image below explains how it works
+
+![Alt text](image-9.png)
+
 Navigate to the the URL `http://127.0.0.1:8000/posts/all` to see the result of the GET request
 
 ![Alt text](image-4.png)
@@ -86,6 +94,10 @@ Now, use Postman to make the POST request to the URL `http://127.0.0.1:8000/post
 ![Alt text](image-5.png)
 
 ## Route paremeters
+
+First, consider the image below for better understanding
+
+![Alt text](image-10.png)
 
 Now, we will create another action to handle to route paramters
 

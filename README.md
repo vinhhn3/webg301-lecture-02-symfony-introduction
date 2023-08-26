@@ -27,7 +27,7 @@ symfony serve
 Now, in the `PostsController.php`, we are going to create the action below
 
 ```php
-/**
+    /**
      * @Route("/posts/overview", name="app_overview")
      */
     public function overviewAction(): Response
@@ -50,7 +50,7 @@ To see the result, nagivate to the URL `http://127.0.0.1:8000/posts/overview`
 Now, we are going to create the action to handle HTTP GET and POST Request
 
 ```php
-/**
+    /**
      * @Route("/posts/all", methods={"GET"}, name="all_posts")
      */
     public function getAll(): Response

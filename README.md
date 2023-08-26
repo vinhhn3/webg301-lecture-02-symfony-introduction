@@ -12,7 +12,7 @@ php bin/console make:controller
 
 After that, the controller is created
 
-![Alt text](image-1.png)
+![Alt text](/images/image-1.png)
 
 Now, start the project and navigate to the URL `http://127.0.0.1:8000/posts` to see the result of the controller
 
@@ -20,7 +20,7 @@ Now, start the project and navigate to the URL `http://127.0.0.1:8000/posts` to 
 symfony serve
 ```
 
-![Alt text](image-2.png)
+![Alt text](/images/image-2.png)
 
 ## Create the first action
 
@@ -43,11 +43,11 @@ Now, in the `PostsController.php`, we are going to create the action below
 
 The image below explains how it works
 
-![Alt text](image-8.png)
+![Alt text](/images/image-8.png)
 
 To see the result, nagivate to the URL `http://127.0.0.1:8000/posts/overview`
 
-![Alt text](image-3.png)
+![Alt text](/images/image-3.png)
 
 ## Different HTTP methods for the route.
 
@@ -83,21 +83,21 @@ Now, we are going to create the action to handle HTTP GET and POST Request
 
 The image below explains how it works
 
-![Alt text](image-9.png)
+![Alt text](/images/image-9.png)
 
 Navigate to the the URL `http://127.0.0.1:8000/posts/all` to see the result of the GET request
 
-![Alt text](image-4.png)
+![Alt text](/images/image-4.png)
 
 Now, use Postman to make the POST request to the URL `http://127.0.0.1:8000/posts/create` to see the result of the POST request
 
-![Alt text](image-5.png)
+![Alt text](/images/image-5.png)
 
 ## Route paremeters
 
 First, consider the image below for better understanding
 
-![Alt text](image-10.png)
+![Alt text](/images/image-10.png)
 
 Now, we will create another action to handle to route paramters
 
@@ -119,7 +119,7 @@ Now, we will create another action to handle to route paramters
 
 Now, we can navigate to the URL `http://127.0.0.1:8000/posts/100` to see the result with params. The params here is 100
 
-![Alt text](image-6.png)
+![Alt text](/images/image-6.png)
 
 ## Request object
 
@@ -145,4 +145,4 @@ Now, we will create another action to handle the POST request with body value
 
 To test it, we will use Postman to make POST request to `http://127.0.0.1:8000/posts/add`
 
-![Alt text](image-7.png)
+![Alt text](/images/image-7.png)

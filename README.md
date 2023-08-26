@@ -45,3 +45,7 @@ To start the project, we need to go to the project folder then start it.
 cd symfony-introduction # Go to the folder
 symfony serve # Start the project
 ```
+
+Voila, we can see the website
+
+![Alt text](image-2.png)

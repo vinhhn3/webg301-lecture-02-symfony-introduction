@@ -5,7 +5,7 @@
 Now, we are going to create the first controller with command below
 
 ```bash
-php bin/console make:controller
+php bin/console make:controller PostsController
 ```
 
 ![Alt text](image.png)

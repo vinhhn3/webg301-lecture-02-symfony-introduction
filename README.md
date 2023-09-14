@@ -9,6 +9,7 @@ Now, we will install needed packages for Symfony
 - Install Composer, which is used to install PHP packages - https://getcomposer.org/download/
 - Install Scoop - https://scoop.sh/
 - Install Symfony CLI - https://symfony.com/download
+- Install Git - https://git-scm.com/
 
 ## Visual Studio Code extensions
 
